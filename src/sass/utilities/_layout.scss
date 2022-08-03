@@ -1,1 +1,9 @@
 @use '../abstracts/' as *;
+
+.layout {
+
+    &--column {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
