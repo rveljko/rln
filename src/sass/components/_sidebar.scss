@@ -1,1 +1,32 @@
 @use '../abstracts/' as *;
+
+.sidebar {
+    position: fixed;
+    margin-block: 2rem;
+    padding: 1.375rem;
+    border-radius: .25rem;
+    transform: translateX(50%);
+    transition: 500ms;
+    z-index: 998;
+    overflow-y: auto;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__list {
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $white;
+            margin-bottom: .75rem;
+        }
+    }
+
+    &__item {
+        margin-bottom: .75rem;
+    }
+
+    &__link {
+        padding: .25rem;
+    }
+}

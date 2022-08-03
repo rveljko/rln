@@ -49,11 +49,14 @@ h5 {
 
 p, li {
     font-size: 1rem;
-    margin-bottom: 2rem;
 
     @include breakpoint(large) {
         font-size: 1.125rem;
     }
+}
+
+p {
+    margin-bottom: 2rem;
 }
 
 a {

@@ -1,1 +1,16 @@
 @use '../abstracts/' as *;
+
+.button {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $white;
+    background-color: $primary-color;
+    padding: .7em 1.4em;
+    border-radius: 100vmax;
+    text-transform: capitalize;
+
+    &--wide {
+        display: block;
+    }
+}

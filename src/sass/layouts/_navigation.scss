@@ -1,1 +1,86 @@
 @use '../abstracts/' as *;
+
+.navigation {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+
+    &__content {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-size: 1.75rem;
+        font-weight: 700;
+
+        @include breakpoint(large) {
+            font-size: 2rem;
+        }
+    }
+
+    &__list {
+        display: none;
+
+        @include breakpoint(large) {
+            display: block;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__link {
+        padding: .25rem;
+    }
+
+    &__button {
+        display: none;
+
+        @include breakpoint(large) {
+            display: inline-block;
+        }
+    }
+
+    &__menu {
+        display: block;
+        cursor: pointer;
+        
+        @include breakpoint(large) {
+            display: none;
+        }
+
+        &.closehamburger > * {
+            
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(.25rem, .3125rem);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(.3125rem, -.375rem)
+            }
+        }
+    }
+
+    &__line {
+        display: block;
+        width: 2rem;
+        height: .1875rem;
+        background-color: $white;
+        border-radius: 100vmax;
+        transition: 500ms;
+
+        &:not(:last-child) {
+            margin-bottom: .25rem;
+        }
+    }
+}

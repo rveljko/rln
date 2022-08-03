@@ -12,6 +12,35 @@
     <script defer src="./js/script.js"></script>
 </head>
 <body>
+    <div id="overlay" class="overlay invisible"></div>
+    <nav class="navigation padding padding--navigation">
+        <div class="container">
+            <div class="navigation__content flex">
+                <a href="#" class="navigation__logo">RLN</a>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link activelink">Home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+                </ul>
+                <a href="#" class="navigation__button button">Try now</a>
+                <div id="openCloseMenu" class="navigation__menu">
+                    <span class="navigation__line"></span>
+                    <span class="navigation__line"></span>
+                    <span class="navigation__line"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
     
+    <div id="sideBar" class="sidebar container gradient-background close">
+        <div class="sidebar__content">
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a href="#" class="sidebar__link activelink">Home</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">About</a></li>
+                <li class="sidebar__item"><a href="#" class="sidebar__link">Contact</a></li>
+            </ul>
+            <a href="#" class="button button--wide">Try now</a>
+        </div>
+    </div>
 </body>
 </html>
