@@ -1,0 +1,62 @@
+@use '../abstracts/' as *;
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    max-width: 33.125rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.3em;
+    max-width: unset;
+
+    @include breakpoint(large) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 2.375rem;
+
+    @include breakpoint(large) {
+        font-size: 3rem;
+    }
+}
+
+h3 {
+    font-size: 1.75rem;
+    
+    @include breakpoint(large) {
+        font-size: 1.875rem;
+    }
+}
+
+h4 {
+    font-size: 1.375rem;
+
+    @include breakpoint(large) {
+        font-size: 1.5rem;
+    }
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+p, li {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint(large) {
+        font-size: 1.125rem;
+    }
+}
+
+a {
+    font-size: 1.125rem;
+    color: $white;
+}
