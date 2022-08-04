@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+
+.block {
+    width: 100%;
+    text-align: center;
+    padding: 1.5625rem;
+    border-radius: .25rem;
+
+    @include breakpoint(large) {
+        padding: 3.125rem;
+    }
+
+    &__label {
+        color: $white;
+    }
+    
+    &__heading {
+        margin-inline: auto;
+        margin-bottom: 2rem;
+    }
+}

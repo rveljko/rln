@@ -7,6 +7,10 @@
     color: transparent;
 }
 
-.gradient-background {
+.gradient-background-primary {
+    background-image: linear-gradient(-45deg, $primary-light 0%, $primary-color 30%, $primary-color 70%, $primary-light 100%);
+}
+
+.gradient-background-card {
     background-image: linear-gradient(-45deg, $card-gradient-light 0%, $card-gradient-dark 30%, $card-gradient-dark 70%, $card-gradient-light 100%);
 }

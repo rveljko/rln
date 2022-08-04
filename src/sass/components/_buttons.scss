@@ -13,4 +13,9 @@
     &--wide {
         display: block;
     }
+
+    &--secondary {
+        background-color: $white;
+        color: $primary-color;
+    }
 }
