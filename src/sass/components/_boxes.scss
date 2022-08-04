@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+
+.box {
+    max-width: max-content;
+    padding: 1.375rem;
+    position: relative;
+    border: .125rem solid transparent;
+    border-radius: .25rem;
+    $space: .625rem;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(-45deg, $card-gradient-light 0%, $card-gradient-dark 30%, $card-gradient-dark 70%, $card-gradient-light 100%);        border: inherit;
+        -webkit-mask: linear-gradient($white, $white) padding-box, linear-gradient($white, $white);
+        -webkit-mask-composite: xor; 
+        mask-composite: exclude; 
+        border-radius: inherit;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    &__heading {
+        margin-bottom: $space;
+    }
+
+    &__description {
+        margin-bottom: 0;
+        max-width: 30.375rem;
+    }
+}
