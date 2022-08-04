@@ -1,0 +1,48 @@
+@use '../abstracts/' as *;
+
+.roadmap {
+    background-color: $background-color;
+    width: 100%;
+
+    &__cards {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: .125rem;
+            height: 100%;
+            background: $white;
+            left: -5%;
+
+            @include breakpoint(large) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    
+    &__card {
+
+        &:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
+
+        @include breakpoint(large) {
+            position: relative;
+
+            &:nth-child(odd) {
+                float: left;
+                clear: right;
+                text-align: right;
+                transform: translateX(calc(-50% - .625rem));
+            }
+            
+            &:nth-child(even) {
+                float: right;
+                clear: left;
+                transform: translateX(calc(50% + .625rem));
+            }
+        }
+    }
+}
