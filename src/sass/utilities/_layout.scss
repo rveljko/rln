@@ -18,5 +18,9 @@
     @include breakpoint(large) {
         flex-direction: row;
         gap: 1.25rem;
+
+        &--reverse {
+            flex-direction: row-reverse;
+        }
     }
 }
