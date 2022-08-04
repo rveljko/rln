@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+
+.title {
+    text-align: center;
+    
+    &__heading {
+        margin-inline: auto;
+        margin-bottom: 0;
+    }
+}
