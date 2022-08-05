@@ -23,4 +23,33 @@
         max-width: 18.9375rem;
         margin-bottom: 0;
     }
+
+    &__price, &__list {
+        padding-block: 2rem;
+    }
+
+    &__price {
+        display: flex;
+        align-items: baseline;
+        gap: 0;
+        border-bottom: .0625rem solid $white;
+    }
+
+    &__price > * {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: $space;
+
+        &:not(:last-child) {
+            margin-bottom: $space;
+        }
+
+        &.unavailable {
+            opacity: .4;
+        }
+    }
 }

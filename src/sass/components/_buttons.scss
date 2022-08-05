@@ -9,6 +9,8 @@
     padding: .7em 1.4em;
     border-radius: 100vmax;
     text-transform: capitalize;
+    text-align: center;
+    $border-size: .25rem;
 
     &--wide {
         display: block;
@@ -17,5 +19,12 @@
     &--secondary {
         background-color: $white;
         color: $primary-color;
+    }
+
+    &--tertiary {
+        background-color: transparent;
+        color: $primary-color;
+        padding: calc(.7em - $border-size) calc(1.4em - $border-size);
+        border: $border-size solid $primary-color;
     }
 }
