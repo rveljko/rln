@@ -3,6 +3,10 @@ const sideBar = document.getElementById('sideBar');
 const overlay = document.getElementById('overlay');
 const sideBarLinks = document.querySelectorAll('.sidebar__link');
 
+window.addEventListener('load', () => {
+    document.body.classList.remove('no-animations');
+});
+
 const openingClosingMenu = () => {
     if (sideBar.classList.contains('close')) {
         sideBar.classList.remove('close');
