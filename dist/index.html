@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RLN</title>
+    <meta name="title" content="RLN">
+    <meta name="description" content="https://github.com/rveljko">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RLN">
+    <meta property="og:description" content="https://github.com/rveljko">
+    <meta property="og:image" content="meta-image.svg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="RLN">
+    <meta property="twitter:description" content="https://github.com/rveljko">
+    <meta property="twitter:image" content="meta-image.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/script.js"></script>
+</head>
+<body class="no-animations">
+    <div class="wrapper">
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div class="wrapper__circle"></div>
+        <div id="overlay" class="overlay invisible"></div>
+        <nav class="navigation padding padding--navigation">
+            <div class="container">
+                <div class="navigation__content flex">
+                    <a href="#" class="navigation__logo">RLN</a>
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__link activelink">Home</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+                    </ul>
+                    <a href="#" class="navigation__button button">Try now</a>
+                    <div id="openCloseMenu" class="navigation__menu">
+                        <span class="navigation__line"></span>
+                        <span class="navigation__line"></span>
+                        <span class="navigation__line"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="sideBar" class="sidebar container gradient-background-card close">
+            <div class="sidebar__content">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item"><a href="#" class="sidebar__link activelink">Home</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">About</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Contact</a></li>
+                </ul>
+                <a href="#" class="button button--wide">Try now</a>
+            </div>
+        </div>
+    
+        <div class="hero padding">
+            <div class="container">
+                <div class="hero__content flex layout layout--column">
+                    <div class="hero__text">
+                        <h1 class="hero__heading">Fastest & easiest way to <br><span class="gradient-text">track your daily data</span></h1>
+                        <p class="hero__description"> RLN is an application that allows you to track your daily process of winning challenges</p>
+                        <a href="#" class="button">Join now for free</a>
+                    </div>
+                    <div class="hero__image">
+                        <img src="./images/dashboard.svg" alt="Picture of RLN Dashboard" class="hero__picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="services padding">
+            <div class="container">
+                <div class="services__content flex layout layout--column">
+                    <div class="services__text">
+                        <div class="title">
+                            <h6 class="title__label">Services</h6>
+                            <h2 class="title__heading">Amazing services made for you</h2>
+                        </div>
+                    </div>
+                    <div class="services__cards flex layout layout--cards">
+                        <div class="card gradient-background-card">
+                            <img src="./images/shield.svg" alt="Shield icon" class="card__icon">
+                            <h3 class="card__heading">Security</h3>
+                            <p class="card__description">No room for worry, your data is encrypted and very well secured</p>
+                        </div>
+                        <div class="card gradient-background-card">
+                            <img src="./images/headset.svg" alt="Headset icon" class="card__icon">
+                            <h3 class="card__heading">24/7 Support</h3>
+                            <p class="card__description">Our Support team is ready 24/7 to answer your questions</p>
+                        </div>
+                        <div class="card gradient-background-card">
+                            <img src="./images/gift.svg" alt="Gift icon" class="card__icon">
+                            <h3 class="card__heading">14 days free</h3>
+                            <p class="card__description">We are giving you 14 days for free to explore our application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activities padding">
+            <div class="container">
+                <div class="activities__content flex layout">
+                    <div class="activities__text">
+                        <h6 class="activities__label">Activities</h6>
+                        <h2 class="activities__heading">Simple ways to track your daily activities</h2>
+                        <div class="boxes">
+                            <div class="box">
+                                <h3 class="box__heading">Beautiful Charts📊</h3>
+                                <p class="box__description">We have made beautiful charts just for you and for you better exeperience with achieving your goal</p>
+                            </div>
+                            <div class="box">
+                                <h3 class="box__heading">Begginers Friendly🚀</h3>
+                                <p class="box__description">Our application is made to be very simple, so beginners can have better experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activities__image">
+                        <img src="./images/activities.svg" alt="" class="activities__picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="testimonials padding">
+            <div class="container">
+                <div class="testimonials__content flex layout layout--column">
+                    <div class="testimonials__text">
+                        <div class="title">
+                            <h6 class="title__label">Testimonials</h6>
+                            <h2 class="title__heading">What can people tell about our app</h2>
+                        </div>
+                    </div>
+                    <div class="testimonials__cards flex layout layout--cards">
+                        <div class="card gradient-background-card">
+                            <img src="./images/john-smith.png" alt="Profile picture of John Smith" class="card__icon">
+                            <h3 class="card__heading">John Smith</h3>
+                            <p class="card__description">My results are awesome and i’m really happy with this awesome application. Helped me to know how much energy i need to spend to be in better form.</p>
+                        </div>
+                        <div class="card gradient-background-card">
+                            <img src="./images/robert-miller.png" alt="Profile picture of Robert Miller" class="card__icon">
+                            <h3 class="card__heading">Robert Miller</h3>
+                            <p class="card__description">My results are awesome and i’m really happy with this awesome application. Helped me to know how much energy i need to spend to be in better form.</p>
+                        </div>
+                        <div class="card gradient-background-card">
+                            <img src="./images/mike-johnson.png" alt="Profile picture of Mike Johnson" class="card__icon">
+                            <h3 class="card__heading">Mike Johnson</h3>
+                            <p class="card__description">My results are awesome and i’m really happy with this awesome application. Helped me to know how much energy i need to spend to be in better form.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="calories padding">
+            <div class="container">
+                <div class="calories__content flex layout layout--reverse">
+                    <div class="calories__text">
+                        <h6 class="calories__label">Calories</h6>
+                        <h2 class="calories__heading">With only few clicks to your daily calories</h2>
+                        <p class="calories__description">Mauris varius ex at convallis vulputate. Pellentesque quis condimentum nibh. In nisi augue, pharetra sed dui luctus.</p>
+                        <a href="#" class="button">Become a member now</a>
+                    </div>
+                    <div class="calories__image">
+                        <img src="./images/calories.svg" alt="" class="calories__picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container padding">
+            <div class="block gradient-background-primary">
+                <div class="block__content">
+                    <h6 class="block__label">Are you ready?</h6>
+                    <h2 class="block__heading">Don’t wait any second more, start today with your journey</h2>
+                    <a href="#" class="button button--secondary">Join us</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="steps padding">
+            <div class="container">
+                <div class="steps__content flex layout">
+                    <div class="steps__text">
+                        <h6 class="steps__label">Steps</h6>
+                        <h2 class="steps__heading">Check your daily & Weekly & Montly steps</h2>
+                        <p class="steps__description">Aliquam quam elit, blandit sit amet purus ut, aliquet consequat tortor. Nulla dolor nisi, scelerisque at placerat non, hendrerit et</p>
+                        <a href="#" class="button">Try now</a>
+                    </div>
+                    <div class="steps__image">
+                        <img src="./images/steps.svg" alt="" class="steps__picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="roadmap padding">
+            <div class="container">
+                <div class="roadmap__content flex layout layout--column">
+                    <div class="roadmap__text">
+                        <div class="title">
+                            <h6 class="title__label">Roadmap</h6>
+                            <h2 class="title__heading">Steps you need to do to start tracking</h2>
+                        </div>
+                    </div>
+                    <div class="roadmap__cards flex layout layout--column">
+                        <ul class="roadmap__steps">
+                            <li class="roadmap__card">
+                                <div class="card gradient-background-card">
+                                    <h4 class="card__subheading">01</h4>
+                                    <h3 class="card__heading">Download RLN</h3>
+                                    <p class="card__description">Download RLN via google Play Store or Apple Store</p>
+                                </div>
+                            </li>
+                            <li class="roadmap__card">
+                                <div class="card gradient-background-card">
+                                    <h4 class="card__subheading">02</h4>
+                                    <h3 class="card__heading">Setup Account</h3>
+                                    <p class="card__description">With only few clicks you can setup your account to track your data</p>
+                                </div>
+                            </li>
+                            <li class="roadmap__card">
+                                <div class="card gradient-background-card">
+                                    <h4 class="card__subheading">03</h4>
+                                    <h3 class="card__heading">Go Outside</h3>
+                                    <p class="card__description">Feel free to explore the world and make hundred and hundred kms</p>
+                                </div>
+                            </li>
+                            <li class="roadmap__card">
+                                <div class="card gradient-background-card">
+                                    <h4 class="card__subheading">04</h4>
+                                    <h3 class="card__heading">Check Data</h3>
+                                    <p class="card__description">Last step you need to do is simply to open application and check data</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="pressure padding">
+            <div class="container">
+                <div class="pressure__content flex layout layout--reverse">
+                    <div class="pressure__text">
+                        <h6 class="pressure__label">Pressure</h6>
+                        <h2 class="pressure__heading">We daily track your pressure to help you</h2>
+                        <p class="pressure__description">Proin gravida metus at est laoreet, eu convallis neque volutpat. Pellentesque lobortis vitae tortor vitae sagittis.</p>
+                        <a href="#" class="button">Become a member now</a>
+                    </div>
+                    <div class="pressure__image">
+                        <img src="./images/pressure.svg" alt="" class="pressure__picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="plans-pricing padding">
+            <div class="container">
+                <div class="plans-pricing__content flex layout layout--column">
+                    <div class="plans-pricing__text">
+                        <div class="title">
+                            <h6 class="title__label">Plans & pricing</h6>
+                            <h2 class="title__heading">We Made best plans & offers for you</h2>
+                        </div>
+                    </div>
+                    <div class="plans-pricing__cards flex layout layout--cards">
+                        <div class="card gradient-background-card">
+                            <h4 class="card__subheading">Basic</h4>
+                            <p class="card__description">Feel free to explore the world and make hundred and hundred kms</p>
+                            <div class="card__price flex"><h3 class="card__heading">$0</h3><p class="card__description">/month</p></div>
+                            <ul class="card__list">
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">All features in Basic</li>
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Customer Service Support</li>
+                                <li class="card__item unavailable"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Analysis Assistance</li>
+                                <li class="card__item unavailable"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Multiple Accounts</li>
+                                <li class="card__item unavailable"><img src="./images/correct.svg" alt="Correct icon" class="card__check">No Ads</li>
+                            </ul>
+                            <a href="#" class="button button--wide button--tertiary">Get Started</a>
+                        </div>
+                        <div class="card gradient-background-card">
+                            <h4 class="card__subheading">Proffesional</h4>
+                            <p class="card__description">Proffesional plan containes all Basic features and few advanced features</p>
+                            <div class="card__price flex"><h3 class="card__heading">$12</h3><p class="card__description">/month</p></div>
+                            <ul class="card__list">
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">All features in Proffesional</li>
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Customer Service Support</li>
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Analysis Assistance</li>
+                                <li class="card__item unavailable"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Multiple Accounts</li>
+                                <li class="card__item unavailable"><img src="./images/correct.svg" alt="Correct icon" class="card__check">No Ads</li>
+                            </ul>
+                            <a href="#" class="button button--wide">Get Started</a>
+                        </div>
+                        <div class="card gradient-background-card">
+                            <h4 class="card__subheading">Premium</h4>
+                            <p class="card__description">Premium plan containes all features for your best tracking</p>
+                            <div class="card__price flex"><h3 class="card__heading">$24</h3><p class="card__description">/month</p></div>
+                            <ul class="card__list">
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">All features in Premium</li>
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Customer Service Support</li>
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Analysis Assistance</li>
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">Multiple Accounts</li>
+                                <li class="card__item"><img src="./images/correct.svg" alt="Correct icon" class="card__check">No Ads</li>
+                            </ul>
+                            <a href="#" class="button button--wide button--tertiary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container padding">
+            <div class="block gradient-background-primary">
+                <div class="block__content">
+                    <h6 class="block__label">Join us</h6>
+                    <h2 class="block__heading"> Save yourself and live longer healthier life</h2>
+                    <a href="#" class="button button--secondary">Join now</a>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer padding">
+            <div class="container">
+                <div class="footer__content flex">
+                    <div class="footer__informations">
+                        <a href="#" class="footer__logo">RLN</a>
+                        <p class="footer__description">Copyright © 2022 RLN</p>
+                    </div>
+                    <div class="footer__navigation flex">
+                        <ul class="footer__list">
+                            <h4 class="footer__heading">Company</h4>
+                            <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <h4 class="footer__heading">Support</h4>
+                            <li class="footer__item"><a href="#" class="footer__link">Chat Support</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Report a bug</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <h4 class="footer__heading">Contact</h4>
+                            <li class="footer__item"><a href="mailto:contact@rln.com" class="footer__link">contact@rln.com</a></li>
+                            <li class="footer__item"><a href="telto:+13101223827" class="footer__link">+1 (310) 1223-827</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">282th Street<br>San Francisco 94016</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
